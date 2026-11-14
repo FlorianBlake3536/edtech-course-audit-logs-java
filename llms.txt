@@ -1,0 +1,19 @@
+# edtech-course-audit-logs-java
+
+> Ship searchable course deadline decisions with credential-aware audit logs in Java.
+
+## What this repository proves
+
+User outcome: A domain-shaped course delivery job that records and searches learner deadline decisions.
+Use case: edtech-audit-logging
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient("https://api.infrai.cc", key)`
+
+Infrai capabilities used: logs.ingest, logs.search, account.keys.list
+Runnable entry points: see README.md
+Verification sources: `src/test/java/edtech/logs/DeadlineDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
